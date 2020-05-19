@@ -66,7 +66,7 @@ demo()
 - Control foreground and background color by setting `color=`, `back_color=` respectively.
 - Change brightness by setting `style=` to either `dim`, `normal` or `bright` | Default = `style="bright"`
 - Continue to change the object separator and line ending with `sep=` and `end=` | Default = `sep=" "`, `end="\n"`
-- Create <a style="color:#9400D3">m</a><a style="color:#4B0082">u</a><a style="color:#0000FF">l</a><a style="color:#00FF00">t</a><a style="color:#FFFF00">i</a><a style="color:#FF7F00">c</a><a style="color:#FF0000">o</a><a style="color:#FF7F00">l</a><a style="color:#FFFF00">o</a><a style="color:#00FF00">r</a><a style="color:#0000FF">e</a><a style="color:#4B0082">d</a> <a style="color:#9400D3">t</a><a style="color:#4B0082">e</a><a style="color:#0000FF">x</a><a style="color:#00FF00">t</a> using `scprint.rainbow()`
+- Create <span style="color:#9400D3">m</span><span style="color:#4B0082">u</span><span style="color:#0000FF">l</span><span style="color:#00FF00">t</span><span style="color:#FFFF00">i</span><span style="color:#FF7F00">c</span><span style="color:#FF0000">o</span><span style="color:#FF7F00">l</span><span style="color:#FFFF00">o</span><span style="color:#00FF00">r</span><span style="color:#0000FF">e</span><span style="color:#4B0082">d</span> <span style="color:#9400D3">t</span><span style="color:#4B0082">e</span><span style="color:#0000FF">x</span><span style="color:#00FF00">t</span> using `scprint.rainbow()`
 
 ### Examples
 ```python
