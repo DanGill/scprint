@@ -23,11 +23,6 @@ print("Hello World!", color="cyan")
 # To retain the built-in print function use:
 from scprint import print as function
 function("Hello World!", color="cyan")
-
-# Or:
-
-import scprint
-scprint.print("Hello World!", color="cyan")
 ```
 
 ### Demo
@@ -38,4 +33,12 @@ scprint.demo()
 <img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" width="100%" height="100%" />
 
 ### Examples
-**`Coming Soon...`**
+```python
+from scprint import print
+print("Hello", color="red", back_color="blue", end=" ")
+punctuation = "!"
+print("World", punctuation, color="blue", back_color="red", sep="")
+```
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/002.png" alt="stdout" title="stdout" width="100%" height="100%" />
+
+**`More Coming Soon...`**
