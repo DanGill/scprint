@@ -1,9 +1,7 @@
 # **SCPrint**
 #### (`Simple Colored Print`)
 
-[![MIT Licence](https://img.shields.io/github/license/DanGill/scprint)](https://github.com/DanGill/scprint/blob/master/LICENSE) [![PyPi Version](https://img.shields.io/pypi/v/scprint)](https://pypi.org/project/scprint/) [![Python Version](https://img.shields.io/pypi/pyversions/scprint)](https://pypi.org/project/scprint/) [![Downloads Per Week](https://img.shields.io/pypi/dw/scprint)](https://pypi.org/project/scprint/) [![Issues Open](https://img.shields.io/github/issues/DanGill/scprint)](https://github.com/DanGill/scprint/issues)
-
-
+[![MIT Licence](https://img.shields.io/github/license/DanGill/scprint)](https://github.com/DanGill/scprint/blob/master/LICENSE) [![PyPi Version](https://img.shields.io/pypi/v/scprint)](https://pypi.org/project/scprint/) [![Python Version](https://img.shields.io/pypi/pyversions/scprint)](https://pypi.org/project/scprint/) [![Downloads Per Week](https://img.shields.io/pypi/dw/scprint)](https://pypi.org/project/scprint/)
 
 
 ### Description
@@ -90,3 +88,7 @@ from scprint import rainbow
 rainbow("Multicolored Text!")
 ```
 <img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/004.png" alt="stdout" title="stdout" height="25px" />
+<br><br><br><br>
+##### Legal Notice
+This module uses the [colorama](https://pypi.org/project/colorama/) module as a dependency, this module is effectively a different way of using [colorama](https://pypi.org/project/colorama/).<br>
+[SCPrint](https://pypi.org/project/scprint/) is in no way associated or endorced with/by [colorama](https://pypi.org/project/colorama/).
