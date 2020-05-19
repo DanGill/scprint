@@ -32,7 +32,7 @@ scprint.print("Hello World!", color="cyan")
 import scprint
 scprint.demo()
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" width="65%" height="65%" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" width="100%" height="100%" />
 
 ### Examples
 **`Coming Soon...`**
