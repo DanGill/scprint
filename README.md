@@ -39,7 +39,7 @@ print("Hello", color="red", back_color="blue", end=" ")
 punctuation = "!"
 print("World", punctuation, color="blue", back_color="red", sep="")
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/002.png" alt="stdout" title="stdout" width="100%" height="100%" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/002.png" alt="stdout" title="stdout" width="20%" height="20%" />
 
 ```python
 from scprint import print
