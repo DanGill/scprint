@@ -42,11 +42,11 @@ $ python -m pip install scprint
         <td align="center"><b><code>Reset</code></b></td>
     </tr>
 </table>
-
+<br>
 ```python
 # To override the built-in print function use (Recommended):
 from scprint import print
-print("Hello World!", color="cyan")
+print("Hello World!", color="cyan", style="dim")
 # The print function will still work normally without color:
 print("Hello World!")
 ```
