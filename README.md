@@ -48,6 +48,6 @@ word = "Multicolored Text"
 for i in range(len(word)):
     print(list(word)[i], color=colors[i%len(colors)], end="")
 ```
-`Image Coming Soon...`
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/003.png" alt="stdout" title="stdout" width="20%" height="20%" />
 
 **`More Coming Soon...`**
