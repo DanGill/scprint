@@ -39,6 +39,15 @@ print("Hello", color="red", back_color="blue", end=" ")
 punctuation = "!"
 print("World", punctuation, color="blue", back_color="red", sep="")
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/002.png" alt="stdout" title="stdout" width="20%" height="20%" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/002.png" alt="stdout" title="stdout" width="100%" height="100%" />
+
+```python
+from scprint import print
+colors = ["red", "yellow", "green", "cyan", "blue", "magenta"]
+word = "Multicolored Text"
+for i in range(len(word)):
+    print(list(word)[i], color=colors[i%len(colors)], end="")
+```
+`Image Coming Soon...`
 
 **`More Coming Soon...`**
