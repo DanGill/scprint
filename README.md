@@ -41,8 +41,8 @@ $ python -m pip install scprint
         <td align="center" style="color:black"><code>Black</code></td>
         <td align="center"><b><code>Reset</code></b></td>
     </tr>
-</table>
-<br>
+</table><br>
+
 ```python
 # To override the built-in print function use (Recommended):
 from scprint import print
