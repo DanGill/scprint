@@ -1,12 +1,11 @@
-# **SCPrint** 
+# **SCPrint**
 #### (`Simple Colored Print`)
 
 [![MIT Licence](https://img.shields.io/github/license/DanGill/scprint)](https://github.com/DanGill/scprint/blob/master/LICENSE) [![PyPi Version](https://img.shields.io/pypi/v/scprint)](https://pypi.org/project/scprint/) [![Python Version](https://img.shields.io/pypi/pyversions/scprint)](https://pypi.org/project/scprint/) [![Downloads Per Week](https://img.shields.io/pypi/dw/scprint)](https://pypi.org/project/scprint/)
 
----
 
 ### Description
-**`Coming Soon...`**
+>**`Coming Soon...`**
 
 ### Installation
 ```
@@ -25,21 +24,25 @@ from scprint import print as newFunction
 newFunction("Hello World!", color="cyan")
 ```
 
+
 ### Demo
 ```python
 import scprint
 scprint.demo()
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" width="100%" height="100%" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" width="50%" height="50%" />
 
-### Examples
+### Features
+>**`Coming Soon...`**
+
+### Code Examples
 ```python
 from scprint import print
 print("Hello", color="red", back_color="blue", end=" ")
 punctuation = "!"
 print("World", punctuation, color="blue", back_color="red", sep="")
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/002.png" alt="stdout" title="stdout" width="12%" height="12%" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/002.png" alt="stdout" title="stdout" width="15%" height="15%" />
 
 ```python
 from scprint import print
@@ -48,6 +51,6 @@ word = "Multicolored Text"
 for i in range(len(word)):
     print(list(word)[i], color=colors[i%len(colors)], end="")
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/004.png" alt="stdout" title="stdout" width="20%" height="20%" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/004.png" alt="stdout" title="stdout" width="23%" height="23%" />
 
-**`More Coming Soon...`**
+>**`More Examples Coming Soon...`**
