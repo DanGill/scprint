@@ -19,10 +19,13 @@ $ python -m pip install scprint
 from scprint import print
 print("Hello World!", color="cyan")
 
+
 # To retain the built-in print function use:
 from scprint import print as function
 function("Hello World!", color="cyan")
+
 # Or:
+
 import scprint
 scprint.print("Hello World!", color="cyan")
 ```
