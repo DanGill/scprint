@@ -88,7 +88,7 @@ from scprint import rainbow
 rainbow("Multicolored Text!")
 ```
 <img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/004.png" alt="stdout" title="stdout" height="25px" />
-<br><br><br><br>
+<br><br>
 
 ##### Legal Notice
 This module uses the [colorama](https://pypi.org/project/colorama/) module as a dependency, this module is effectively a different way of using [colorama](https://pypi.org/project/colorama/).<br>
