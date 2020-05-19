@@ -89,6 +89,7 @@ rainbow("Multicolored Text!")
 ```
 <img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/004.png" alt="stdout" title="stdout" height="25px" />
 <br><br><br><br>
+
 ### Legal Notice
 This module uses the [colorama](https://pypi.org/project/colorama/) module as a dependency, this module is effectively a different way of using [colorama](https://pypi.org/project/colorama/).<br>
 [SCPrint](https://pypi.org/project/scprint/) is in no way associated or endorced with/by [colorama](https://pypi.org/project/colorama/).
