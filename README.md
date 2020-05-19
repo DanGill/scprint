@@ -21,8 +21,8 @@ print("Hello World!", color="cyan")
 
 
 # To retain the built-in print function use:
-from scprint import print as function
-function("Hello World!", color="cyan")
+from scprint import print as newFunction
+newFunction("Hello World!", color="cyan")
 ```
 
 ### Demo
