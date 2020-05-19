@@ -30,7 +30,7 @@ newFunction("Hello World!", color="cyan")
 import scprint
 scprint.demo()
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" width="50%" height="50%" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" width="65%" height="65%" />
 
 ### Features
 >**`Coming Soon...`**
