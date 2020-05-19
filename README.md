@@ -35,7 +35,7 @@ scprint.demo()
 ### Features
 >**`Coming Soon...`**
 
-### Code Examples
+### Examples
 ```python
 from scprint import print
 print("Hello", color="red", back_color="blue", end=" ")
