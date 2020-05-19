@@ -27,8 +27,8 @@ newFunction("Hello World!", color="cyan")
 
 ### Demo
 ```python
-import scprint
-scprint.demo()
+from scprint import demo
+demo()
 ```
 <img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" width="65%" height="65%" />
 
