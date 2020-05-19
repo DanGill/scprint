@@ -14,12 +14,18 @@ $ python -m pip install scprint
 
 ### Usage
 
-<table align="center">
+<table align="center" style="background-color: rgba(0, 0, 0, 0);">
     <tr>
         <td align="center"><b>Style</b></td>
         <td align="center" style="color:#000000"><code>Dim</code></td>
         <td align="center" style="color:#808080"><code>Normal</code></td>
         <td align="center" style="color:#b3b3b3"><b><code>Bright</code></b></td>
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
+        <td />
     </tr>
     <tr>
         <td align="center"><b>Color</b></td>
