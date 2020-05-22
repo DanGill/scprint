@@ -7,7 +7,7 @@
 
 
 ### Description
-SCPrint is a Python 3 module aiming to make it simple and easy to use colors in your python projects. This is achieved by overriding the built-in python print function with one supportive of colored outputs, yet retaining the core functionality of the built-in print function, for example: Line Endings: `end=`, Separators: `sep=` and Flushed Outputs: `flush=`. SCPrint is able to replace the built-in print function without creating any problems with your preexisting programs and scripts.
+SCPrint is a Python 3 module aiming to make it simple and easy to use colors in your python projects. This is achieved by overriding the built-in python print function with one supportive of colored outputs, yet retaining the core functionality of the built-in print function, for example: Line Endings: `end=`, Separators: `sep=` and Flushed Outputs: `flush=`. SCPrint is able to replace the built-in print function without creating any problems with your pre-existing programs and scripts.
 
 ### Installation
 ```
@@ -43,7 +43,7 @@ demo(showBColor=False)
 
 ### Features
 - Control foreground and background color by setting `color=`, `bcolor=` respectively.
-- Continue to change the object separator and line ending with `sep=` and `end=` | Default = `sep=" "`, `end="\n"`
+- Continue to change the object separator and line ending with `sep=` and `end=` \| Default = `sep=" "`, `end="\n"`
 - Create <span style="color:#9400D3">m</span><span style="color:#4B0082">u</span><span style="color:#0000FF">l</span><span style="color:#00FF00">t</span><span style="color:#FFFF00">i</span><span style="color:#FF7F00">c</span><span style="color:#FF0000">o</span><span style="color:#FF7F00">l</span><span style="color:#FFFF00">o</span><span style="color:#00FF00">r</span><span style="color:#0000FF">e</span><span style="color:#4B0082">d</span> <span style="color:#9400D3">t</span><span style="color:#4B0082">e</span><span style="color:#0000FF">x</span><span style="color:#00FF00">t</span> using `scprint.rainbow()`
 
 ### Examples
