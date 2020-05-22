@@ -1,5 +1,6 @@
 .build.bat
 .push.bat
+.clear.bat
 setup.py
 scprint.egg-info
 dist
