@@ -7,7 +7,7 @@
 
 
 ### Description
-> ***`Comming Soon...`***
+SCPrint is a Python 3 module aiming to make it simple and easy to use colors in your python projects. This is achieved by overriding the built-in python print function with one supportive of colored outputs, yet retaining the core functionality of the built-in print function, for example: Line Endings: `end=`, Separators: `sep=` and Flushed Outputs: `flush=`. SCPrint is able to replace the built-in print function without creating any problems with your preexisting programs and scripts.
 
 ### Installation
 ```
@@ -16,45 +16,16 @@ $ python -m pip install scprint
 
 ### Usage
 
-<table align="center" style="background-color: rgba(0, 0, 0, 0);">
-    <tr>
-        <td align="center"><b>Style</b></td>
-        <td align="center" style="color:#000000"><code>Dim</code></td>
-        <td align="center" style="color:#808080"><code>Normal</code></td>
-        <td align="center" style="color:#b3b3b3"><b><code>Bright</code></b></td>
-        <td />
-        <td />
-        <td />
-        <td />
-        <td />
-        <td />
-    </tr>
-    <tr>
-        <td align="center"><b>Color</b></td>
-        <td align="center" style="color:white"><code>White</code></td>
-        <td align="center" style="color:red"><code>Red</code></td>
-        <td align="center" style="color:yellow"><code>Yellow</code></td>
-        <td align="center" style="color:green"><code>Green</code></td>
-        <td align="center" style="color:cyan"><code>Cyan</code></td>
-        <td align="center" style="color:blue"><code>Blue</code></td>
-        <td align="center" style="color:magenta"><code>Magenta</code></td>
-        <td align="center" style="color:black"><code>Black</code></td>
-        <td align="center"><b><code>Reset</code></b></td>
-    </tr>
-</table><br>
-
 ```python
 # To override the built-in print function use (Recommended):
 from scprint import print
-print("Hello World!", color="cyan", style="dim")
-# The print function will still work normally without color:
+print("Hello World!", color="Blue", bcolor="White")
+# The print function will still work normally without colors:
 print("Hello World!")
-```
 
-```python
-# To retain the built-in print function use:
+# You can still use SCPrint as its own fuction (Not Ideal):
 from scprint import print as newFunction
-newFunction("Hello World!", color="cyan")
+newFunction("Hello World!", color="Red", bcolor="Grey")
 ```
 
 ```python
@@ -66,27 +37,33 @@ rainbow("Multicolored Text")
 ### Demo
 ```python
 from scprint import demo
-demo()
+demo(showBColor=False)
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/001.png" alt="stdout" title="stdout" height="200px" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/005.png" alt="stdout" title="stdout" height="1000px" />
 
 ### Features
-- Control foreground and background color by setting `color=`, `back_color=` respectively.
-- Change brightness by setting `style=` to either `dim`, `normal` or `bright` | Default = `style="bright"`
+- Control foreground and background color by setting `color=`, `bcolor=` respectively.
 - Continue to change the object separator and line ending with `sep=` and `end=` | Default = `sep=" "`, `end="\n"`
 - Create <span style="color:#9400D3">m</span><span style="color:#4B0082">u</span><span style="color:#0000FF">l</span><span style="color:#00FF00">t</span><span style="color:#FFFF00">i</span><span style="color:#FF7F00">c</span><span style="color:#FF0000">o</span><span style="color:#FF7F00">l</span><span style="color:#FFFF00">o</span><span style="color:#00FF00">r</span><span style="color:#0000FF">e</span><span style="color:#4B0082">d</span> <span style="color:#9400D3">t</span><span style="color:#4B0082">e</span><span style="color:#0000FF">x</span><span style="color:#00FF00">t</span> using `scprint.rainbow()`
 
 ### Examples
 ```python
 from scprint import print
-print("Hello", color="red", back_color="blue", end=" ")
-punctuation = "!"
-print("World", punctuation, color="blue", back_color="red", sep="")
+print("This text is white", color="White")
+print("This text is Blue with a Yellow Background", color="Blue", bcolor="Yellow1")
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/002.png" alt="stdout" title="stdout" height="25px" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/008.png" alt="stdout" title="stdout" height="50px" />
+
+```python
+from scprint import print
+print(" Hello ", color="red", bcolor="blue", end="")
+punctuation = "!"
+print(" World", punctuation, " ", color="blue", bcolor="red", sep="")
+```
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/009.png" alt="stdout" title="stdout" height="25px" />
 
 ```python
 from scprint import rainbow
 rainbow("Multicolored Text!")
 ```
-<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/004.png" alt="stdout" title="stdout" height="25px" />
+<img src="https://raw.githubusercontent.com/DanGill/scprint/master/media/010.png" alt="stdout" title="stdout" height="25px" />
