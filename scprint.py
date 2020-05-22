@@ -1,6 +1,6 @@
 import sys
 import platform
-from colorsToHex import colors
+from colors import colors
 
 if platform.system().lower() == 'windows':
     from ctypes import windll, c_int, byref
@@ -12,14 +12,14 @@ if platform.system().lower() == 'windows':
 
 orignialprint = print
 
-def print(*args, color = None, bcolor = None, sep=" ", end="\n"):
+def print(*args, color = None, bcolor = None, sep=" ", end="\n", flush=False):
     if len(args) == 1:
         string = args[0]
     else:
         string = sep.join(list(map(str,args)))
 
     if "idlelib.run" in sys.modules:
-        orignialprint(string, end=end)
+        orignialprint(string, end=end, flush=flush)
     else:
         colorIsHex, bcolorIsHex = 0, 0
         if color != None:
@@ -43,16 +43,16 @@ def print(*args, color = None, bcolor = None, sep=" ", end="\n"):
             bcode=""
 
         reset = u"\u001b[0m"
-        orignialprint(bcode, code, string, reset, sep="", end=end)
+        orignialprint(bcode, code, string, reset, sep="", end=end, flush=flush)
 
-def rainbow(*args, sep = " ", end = "\n"):
+def rainbow(*args, sep = " ", end = "\n", flush=False):
     if len(args) == 1:
         string = args[0]
     else:
         string = sep.join(list(map(str,args)))
 
     if "idlelib.run" in sys.modules:
-        orignialprint(string, end=end)
+        orignialprint(string, end=end, flush=flush)
     else:
         mainColors = [colors[1], colors[2], colors[3], colors[4], colors[5], colors[6], colors[7], colors[8], colors[9], colors[10], colors[11], colors[12], colors[13], colors[14]]
         for i in range(len(string)):
