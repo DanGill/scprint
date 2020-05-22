@@ -12,7 +12,7 @@ if platform.system().lower() == 'windows':
 
 orignialprint = print
 
-def print(*args, color = "White", bcolor = "Black", sep=" ", end="\n"):
+def print(*args, color = None, bcolor = None, sep=" ", end="\n"):
     if len(args) == 1:
         string = args[0]
     else:
@@ -22,24 +22,28 @@ def print(*args, color = "White", bcolor = "Black", sep=" ", end="\n"):
         orignialprint(string, end=end)
     else:
         colorIsHex, bcolorIsHex = 0, 0
-        if color[0] == "#":
-            color = color[1:]
-            colorIsHex = 1
-        
-        if bcolor[0] == "#":
-            bcolor = bcolor[1:]
-            bcolorIsHex = 1
-        
-        for i in range(len(colors)):
-            if colors[i][colorIsHex].lower() == color.lower():
-                code = (u"\u001b[38;5;" + str(i) + u"m")
+        if color != None:
+            if color[0] == "#":
+                color = color[1:]
+                colorIsHex = 1
+            for i in range(len(colors)):
+                if colors[i][colorIsHex].lower() == color.lower():
+                    code = (u"\u001b[38;5;" + str(i) + u"m")
+        else:
+            code=""
 
-        for i in range(len(colors)):
-            if colors[i][bcolorIsHex].lower() == bcolor.lower():
-                bcode = (u"\u001b[48;5;" + str(i) + u"m")
+        if bcolor != None:
+            if bcolor[0] == "#":
+                bcolor = bcolor[1:]
+                bcolorIsHex = 1
+            for i in range(len(colors)):
+                if colors[i][bcolorIsHex].lower() == bcolor.lower():
+                    bcode = (u"\u001b[48;5;" + str(i) + u"m")
+        else:
+            bcode=""
 
         reset = u"\u001b[0m"
-        orignialprint(bcode + code + string + reset, end=end)
+        orignialprint(bcode, code, string, reset, sep="", end=end)
 
 def rainbow(*args, sep = " ", end = "\n"):
     if len(args) == 1:
