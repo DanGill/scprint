@@ -12,14 +12,14 @@ if platform.system().lower() == 'windows':
 
 orignialprint = print
 
-def print(*args, color = None, bcolor = None, sep=" ", end="\n", flush=False):
+def print(*args, color = None, bcolor = None, sep=" ", **kwargs):
     if len(args) == 1:
         string = args[0]
     else:
         string = sep.join(list(map(str,args)))
 
     if "idlelib.run" in sys.modules:
-        orignialprint(string, end=end, flush=flush)
+        orignialprint(string, **kwargs)
     else:
         colorIsHex, bcolorIsHex = 0, 0
         if color != None:
@@ -43,20 +43,20 @@ def print(*args, color = None, bcolor = None, sep=" ", end="\n", flush=False):
             bcode=""
 
         reset = u"\u001b[0m"
-        orignialprint(bcode, code, string, reset, sep="", end=end, flush=flush)
+        orignialprint(bcode, code, string, reset, sep="", **kwargs)
 
-def rainbow(*args, sep = " ", end = "\n", flush=False):
+def rainbow(*args, sep = " ", end = "\n", **kwargs):
     if len(args) == 1:
         string = args[0]
     else:
         string = sep.join(list(map(str,args)))
 
     if "idlelib.run" in sys.modules:
-        orignialprint(string, end=end, flush=flush)
+        orignialprint(string, end=end, **kwargs)
     else:
         mainColors = [colors[1], colors[2], colors[3], colors[4], colors[5], colors[6], colors[7], colors[8], colors[9], colors[10], colors[11], colors[12], colors[13], colors[14]]
         for i in range(len(string)):
-            print(string[i], color=mainColors[i%len(mainColors)][0], sep="", end="")
+            print(string[i], color=mainColors[i%len(mainColors)][0], sep="", end="", **kwargs)
         print("", end=end)
 
 def demo(showHex = False, showBColor = False):

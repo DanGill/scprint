@@ -6,3 +6,4 @@ scprint.egg-info
 dist
 build
 betatests
+__pycache__
