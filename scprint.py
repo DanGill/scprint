@@ -14,7 +14,7 @@ orignialprint = print
 
 def print(*args, color = None, bcolor = None, sep=" ", **kwargs):
     if len(args) == 1:
-        string = args[0]
+        string = str(args[0])
     else:
         string = sep.join(list(map(str,args)))
 
@@ -47,7 +47,7 @@ def print(*args, color = None, bcolor = None, sep=" ", **kwargs):
 
 def rainbow(*args, sep = " ", end = "\n", **kwargs):
     if len(args) == 1:
-        string = args[0]
+        string = str(args[0])
     else:
         string = sep.join(list(map(str,args)))
 
