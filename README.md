@@ -1,7 +1,7 @@
 # **SCPrint**
 #### (`Simple Colored Print`)
 
-[![MIT Licence](https://img.shields.io/github/license/DanGill/scprint)](https://github.com/DanGill/scprint/blob/master/LICENSE) [![PyPi Version](https://img.shields.io/pypi/v/scprint)](https://pypi.org/project/scprint/) [![Python Version](https://img.shields.io/pypi/pyversions/scprint)](https://www.python.org/) [![Downloads Per Week](https://img.shields.io/pypi/dw/scprint)](https://pypi.org/project/scprint/) [![Issues Open](https://img.shields.io/github/issues/DanGill/scprint)](https://github.com/DanGill/scprint/issues)
+[![MIT Licence](https://img.shields.io/github/license/DanGill/scprint)](https://github.com/DanGill/scprint/blob/master/LICENSE) [![PyPi Version](https://img.shields.io/pypi/v/scprint)](https://pypi.org/project/scprint/) [![Python Version](https://img.shields.io/pypi/pyversions/scprint)](https://www.python.org/) [![Downloads Per Week](https://img.shields.io/pypi/dw/scprint)](https://pypi.org/project/scprint/) [![Issues Open](https://img.shields.io/github/issues/DanGill/scprint)](https://github.com/DanGill/scprint/issues){:target="_blank"}
 
 
 
