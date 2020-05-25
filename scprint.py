@@ -11,69 +11,55 @@ if platform.system().lower() == 'windows':
     windll.kernel32.SetConsoleMode(c_int(stdout_handle), mode)
 
 orignialprint = print
-orignialinput = input
 
-def getColorCode(color, precode, postcode):
-    colorIsHex = 0
-    if color != None:
-        if color[0] == "#":
-            color = color[1:]
-            colorIsHex = 1
-        for i in range(len(colors)):
-            if colors[i][colorIsHex].lower() == color.lower():
-                code = (precode + str(i) + postcode)
-    else:
-        code=""
-    return code
-
-
-def print(*args, color=None, bcolor=None, sep=" ", end="\n", **kwargs):
+def print(*args, color = None, bcolor = None, sep=" ", **kwargs):
     if len(args) == 1:
         string = str(args[0])
+    else:
+        string = sep.join(list(map(str,args)))
+
+    if "idlelib.run" in sys.modules:
+        orignialprint(string, **kwargs)
+    else:
+        colorIsHex, bcolorIsHex = 0, 0
+        if color != None:
+            if color[0] == "#":
+                color = color[1:]
+                colorIsHex = 1
+            for i in range(len(colors)):
+                if colors[i][colorIsHex].lower() == color.lower():
+                    code = (u"\u001b[38;5;" + str(i) + u"m")
+        else:
+            code=""
+
+        if bcolor != None:
+            if bcolor[0] == "#":
+                bcolor = bcolor[1:]
+                bcolorIsHex = 1
+            for i in range(len(colors)):
+                if colors[i][bcolorIsHex].lower() == bcolor.lower():
+                    bcode = (u"\u001b[48;5;" + str(i) + u"m")
+        else:
+            bcode=""
+
+        reset = u"\u001b[0m"
+        orignialprint(bcode, code, string, reset, sep="", **kwargs)
+
+def rainbow(*args, sep = " ", end = "\n", **kwargs):
+    if len(args) == 1:
+        string = args[0]
     else:
         string = sep.join(list(map(str,args)))
 
     if "idlelib.run" in sys.modules:
         orignialprint(string, end=end, **kwargs)
     else:
-        colorcode = getColorCode(color, u"\u001b[38;5;", u"m")
-        colorbcode = getColorCode(bcolor, u"\u001b[48;5;", u"m")
-        resetcode = u"\u001b[0m"
-        orignialprint(colorbcode, colorcode, string, sep="", end="", **kwargs)
-        orignialprint(resetcode, end=end, **kwargs)
+        mainColors = [colors[1], colors[2], colors[3], colors[4], colors[5], colors[6], colors[7], colors[8], colors[9], colors[10], colors[11], colors[12], colors[13], colors[14]]
+        for i in range(len(string)):
+            print(string[i], color=mainColors[i%len(mainColors)][0], sep="", end="", **kwargs)
+        print("", end=end)
 
-def input(*args, color=None, bcolor=None, pcolor=None, sep=" ", end="", pend="", **kwargs):
-    if len(args) == 1:
-        string = str(args[0])
-    else:
-        string = sep.join(list(map(str,args)))
-    
-    if "idlelib.run" in sys.modules:
-        orignialprint(string, end=end **kwargs)
-    else:
-        colorcode = getColorCode(color, u"\u001b[38;5;", u"m")
-        bcolorcode = getColorCode(bcolor, u"\u001b[48;5;", u"m")
-        resetcode = u"\u001b[0m"
-        orignialprint(bcolorcode, colorcode, string, sep="", end=end, **kwargs)
-        orignialprint(resetcode, end="", **kwargs)
-        pcolorcode = getColorCode(pcolor, u"\u001b[38;5;", u"m")
-        orignialprint(pcolorcode, sep="", end="", **kwargs)
-    returnInput = orignialinput()
-    orignialprint(resetcode, end=pend, **kwargs)
-    return returnInput
-
-def rainbow(*args, sep=" ", end="\n", **kwargs):
-    if len(args) == 1:
-        string = str(args[0])
-    else:
-        string = sep.join(list(map(str,args)))
-
-    mainColors = [colors[1], colors[2], colors[3], colors[4], colors[5], colors[6], colors[7], colors[8], colors[9], colors[10], colors[11], colors[12], colors[13], colors[14]]
-    for i in range(len(string)):
-        print(string[i], color=mainColors[i%len(mainColors)][0], sep="", end="", **kwargs)
-    print("", end=end, **kwargs)
-
-def demo(showHex=False, showBColor=False):
+def demo(showHex = False, showBColor = False):
     if showHex == True:
         space = str(20)
         smallSpace = str(8)
