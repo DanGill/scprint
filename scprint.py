@@ -1,3 +1,5 @@
+#! python37
+
 import sys
 import platform
 from colors import colors
