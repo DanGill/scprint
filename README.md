@@ -1,10 +1,13 @@
-# **SCPrint**
+# **SCPrint (Discontinued)**
 #### (`Simple Colored Print`)
 
-[![MIT Licence](https://img.shields.io/github/license/DanGill/scprint)](https://github.com/DanGill/scprint/blob/master/LICENSE) [![PyPi Version](https://img.shields.io/pypi/v/scprint)](https://pypi.org/project/scprint/) [![Python Version](https://img.shields.io/pypi/pyversions/scprint)](https://www.python.org/) [![Downloads Per Week](https://img.shields.io/pypi/dm/scprint)](https://pypi.org/project/scprint/) [![Issues Open](https://img.shields.io/github/issues/DanGill/scprint)](https://github.com/DanGill/scprint/issues)
+[![MIT Licence](https://img.shields.io/github/license/DanGill/scprint)](https://github.com/DanGill/scprint/blob/master/LICENSE) [![PyPi Version](https://img.shields.io/pypi/v/scprint)](https://pypi.org/project/scprint/) [![Python Version](https://img.shields.io/pypi/pyversions/scprint)](https://www.python.org/)
 
 
 
+
+### DISCONTINUATION NOTICE
+This project was discontinued on the 12th March 2021. It has now been replaced by [cli-essentials](https://github.com/DanGill/cli-essentials). I highly recommend migrating to [cli-essentials](https://github.com/DanGill/cli-essentials) however it is not required. This module will continue to support current python versions for a while (hopefully). However if you are having trouble, make sure your first troubleshooting step is migrating to [cli-essentials](https://github.com/DanGill/cli-essentials).
 
 ### Description
 SCPrint is a Python 3 module aiming to make it simple and easy to use colors in your python projects. This is achieved by overriding the built-in python print function with one supportive of colored outputs, yet retaining the core functionality of the built-in print function, for example: Line Endings: `end=`, Separators: `sep=` and Flushed Outputs: `flush=`. SCPrint is able to replace the built-in print function without creating any problems with your pre-existing programs and scripts.
