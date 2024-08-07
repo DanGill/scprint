@@ -7,7 +7,11 @@
 
 
 ### DISCONTINUATION NOTICE
-This project was discontinued on the 12th March 2021. It has now been replaced by [cli-essentials](https://github.com/DanGill/cli-essentials). I highly recommend migrating to [cli-essentials](https://github.com/DanGill/cli-essentials) however it is not required. This module will continue to support current python versions for a while (hopefully). However if you are having trouble, make sure your first troubleshooting step is migrating to [cli-essentials](https://github.com/DanGill/cli-essentials).
+This project was discontinued on the 12th March 2021. It has now been replaced by [cli-essentials](https://github.com/DanGill/cli-essentials). I highly recommend migrating to [cli-essentials](https://github.com/DanGill/cli-essentials).
+
+Update (7th August 2024): At the request of another user, I am deleting the SCPrint PyPi project at https://pypi.org/project/scprint/ to free the namespace for another use. **This means that the PyPi project is no longer under my control.**
+
+*Any references from this project to https://pypi.org/project/scprint/ are no longer valid.*
 
 ### Description
 SCPrint is a Python 3 module aiming to make it simple and easy to use colors in your python projects. This is achieved by overriding the built-in python print function with one supportive of colored outputs, yet retaining the core functionality of the built-in print function, for example: Line Endings: `end=`, Separators: `sep=` and Flushed Outputs: `flush=`. SCPrint is able to replace the built-in print function without creating any problems with your pre-existing programs and scripts.
